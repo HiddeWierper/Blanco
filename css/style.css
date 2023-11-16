@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Enter Sansman';
+  src: url('EnterSansmanBold.woff2') format('woff2'),
+    url('EnterSansmanBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Enter Sansman Normal';
+  src: url('EnterSansmanBoldItalic.woff2') format('woff2'),
+    url('EnterSansmanBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  background-color: white;
+  font-family: 'Enter Sansman';
+  font-weight: normal;
+  font-style: normal;
+  height: 100%;
+
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  margin: auto;
+  box-sizing: border-box;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  height: fit-content;
+}
+
+p {
+  color: white;
+}
+
+a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: white;
+  transition: 0.5s;
+}
+
+a.active {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+a.active:hover {
+  color: rgba(255, 255, 255, 0.644);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+  transition: 0.5s;
+}
+
+ul {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+}
+
+li {
+  margin: auto;
+  display: flex;
+  padding: 1.5%;
+  font-size: 1.1rem;
+  font-family: 'Enter Sansman';
+  font-weight: normal;
+  font-style: normal;
+}
+
+i#close {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 3.3% 6%;
+  color: rgba(128, 128, 128, 0.486);
+  cursor: pointer;
+  transition: width 0.4 ease-in-out;
+
+}
+
+i#close:hover {
+  transition: width 0.4 ease-in-out;
+  transform: scale(1.03);
+}
+
+input {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 2.5% 5%;
+  height: auto;
+  width: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  background-image: url('https://www.w3schools.com/howto/searchIcon.png');
+  padding: 12px 20px 12px 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+img {
+  width: 15%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  padding-top: 5px;
+}
+
+.promoBg {
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.img1 {
+  background-image: url("/images/promo.gif");
+}
