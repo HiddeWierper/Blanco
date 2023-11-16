@@ -44,25 +44,22 @@ function shrinkHeader() {
   var img = document.getElementById('shrinkImg');
   var searchBar = document.getElementById("searchBar");
   var close = document.getElementById("close");
-  if (scrollPosition > 50) {
-    img.style.width = '7.5%';
-    searchBar.style.margin = "1% 2.5%";
-    close.style.margin = "1.8% 4%";
-  } else {
-    img.style.width = '';
-    img.style.display = '';
-    searchBar.style.margin = "";
-    close.style.margin = "";
-  }
 
   if (scrollPosition > 100) {
     header.style.position = 'fixed';
     header.style.top = 0;
     header.style.width = '100%';
+    img.style.width = '7.5%';
+    searchBar.style.margin = "1% 2.5%";
+    close.style.margin = "1.8% 4%";
   } else {
     header.style.position = 'sticky';
     header.style.top = '';
     header.style.width = '';
+    img.style.width = '';
+    img.style.display = '';
+    searchBar.style.margin = "";
+    close.style.margin = "";
   }
 
   if (scrollPosition > 100) {
