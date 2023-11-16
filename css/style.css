@@ -164,3 +164,29 @@ img {
 .img1 {
   background-image: url("/images/promo.gif");
 }
+
+.whoAreWe {
+  width: 100%;
+  background-color: white;
+  height: fit-content;
+  height: 30%;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.whoAreWe p {
+  font-size: 1.3rem;
+  color: grey;
+  margin: 4% 15%;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-stretch: 50%;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  display: inline-block;
+  transform: scaleY(1.5);
+  transform-origin: 0 0;
+  margin-bottom: -50%;
+}
