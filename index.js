@@ -38,33 +38,29 @@ window.onscroll = function() {
   shrinkHeader();
 };
 
+
 function shrinkHeader() {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   var header = document.querySelector('header');
   var img = document.getElementById('shrinkImg');
   var searchBar = document.getElementById("searchBar");
   var close = document.getElementById("close");
+  var whoAreWe = document.getElementById("whoAreWe");
+  var justDropped = document.getElementById("justDropped")
 
-  if (scrollPosition > 100) {
+  if(scrollPosition > 450){
+    justDropped.style.opacity = '1';
+  }else {
+    justDropped.style.opacity = '0';
+  }
+
+  if (scrollPosition >= 100) {
     header.style.position = 'fixed';
     header.style.top = 0;
     header.style.width = '100%';
     img.style.width = '7.5%';
     searchBar.style.margin = "1% 2.5%";
     close.style.margin = "1.8% 4%";
-  } else {
-    header.style.position = 'sticky';
-    header.style.top = '';
-    header.style.width = '';
-    img.style.width = '';
-    img.style.display = '';
-    searchBar.style.margin = "";
-    close.style.margin = "";
-  }
-
-  if (scrollPosition > 100) {
-    var middlePosition = (header.offsetWidth - img.offsetWidth) / 2;
-
     img.style.position = 'absolute';
     img.style.top = '50%';
     img.style.left = 0 + 'px';
@@ -74,5 +70,14 @@ function shrinkHeader() {
     img.style.top = '';
     img.style.left = '';
     img.style.transform = '';
+    header.style.position = 'sticky';
+    header.style.top = '';
+    header.style.width = '';
+    img.style.width = '';
+    img.style.display = '';
+    searchBar.style.margin = "";
+    close.style.margin = "";
   }
+
+  
 }

@@ -36,13 +36,31 @@
     </nav>
   </header>
 
-  <div class="promoBg img1"></div>
-  <div class="whoAreWe">
+  <div class="whoAreWe" id="whoAreWe">
     <h1>WHO ARE WE</h1>
     <p>Blanco is a sustainable clothing brand from Rotterdam. We create stylish garments with a focus on ethics and the
       environment. Join us in our mission to wear your values proudly.</p>
   </div>
 
+  <div class="justDropped" id="justDropped">
+    <h2>Just Dropped</h2>
+    <div class="product1">
+      <img id="productPhoto" src="images/ProductFoto1.webp" alt="...">
+    </div>
+  </div>
+
+  <script>
+    var productPhoto = document.getElementById('productPhoto');
+
+    productPhoto.addEventListener('mouseover', function () {
+      productPhoto.src = 'images/ProductFoto2.webp';
+    });
+
+    productPhoto.addEventListener('mouseout', function () {
+      productPhoto.src = 'images/ProductFoto1.webp';
+    });
+
+  </script>
 </body>
 
 </html>
