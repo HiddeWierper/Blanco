@@ -168,6 +168,10 @@ input {
   transition: 0.5s;
 }
 
+input:active {
+  border: none;
+}
+
 input:hover {
   transform: scale(1.05);
   transition: 0.5s;
